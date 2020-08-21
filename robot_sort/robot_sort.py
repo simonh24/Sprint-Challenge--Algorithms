@@ -98,7 +98,7 @@ class SortingRobot:
         """
         # Fill this out
         while self.can_move_right():
-            if not self.compare_item == 1:
+            if self.compare_item() == -1 or self.compare_item() == None:
                 self.swap_item()
                 self.move_right()
             else:

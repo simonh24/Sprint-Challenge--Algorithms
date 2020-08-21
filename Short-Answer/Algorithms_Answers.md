@@ -2,10 +2,10 @@
 
 ## Exercise I
 
-a) The while loop is ran n * n * n times, so O(n^3)
+a) The while loop is ran n * n * n times, so O(n^3) / O(n^2). Therefore the runtime would be O(n)
 
 
-b) The for loop is ran n times and the while loop inside is ran n/2 times. O(n^2/2) which about equals O(n^2)
+b) The for loop is ran n times and the while loop inside is ran n/2 times, which is log(n), therefore the end complexity would be O(n log(n))
 
 
 c) Recursion runs at O(n)
@@ -20,3 +20,5 @@ for f in n:
         return f
 
 This will loop through until floor f is found from 0, so the runtime complexity will be O(n).
+
+Minimized would be a binary search. This would have a runtime complexity of O(log n)
